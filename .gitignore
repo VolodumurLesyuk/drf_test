@@ -1,0 +1,82 @@
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignore virtual environment
+venv/
+.env
+.venv/
+env/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and compiled files
+*.log
+logs/
+*.sqlite3
+
+# Ignore Django secret keys and environment variables
+.env
+*.env
+
+# Ignore database migrations cache
+db.sqlite3
+*.sqlite3
+*/migrations/__pycache__/
+*/migrations/*.pyc
+*/migrations/*.pyo
+
+# Ignore Django static and media files (if using collectstatic)
+staticfiles/
+static/
+media/
+
+# Ignore IDE files (PyCharm, VSCode, etc.)
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore compiled assets (if using Webpack or other frontend tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Ignore compiled Python files
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# Ignore coverage reports
+htmlcov/
+.coverage
+*.cover
+coverage.xml
+*.cov
+
+# Ignore pytest and testing cache
+.pytest_cache/
+.tox/
+nosetests.xml
+coverage/
+
+# Ignore deployment-related files
+*.pem
+*.crt
+*.key
+
+# Ignore Docker files (if using Docker)
+docker-compose.override.yml
+docker-compose.override.yaml
+.dockerignore
+
+# Ignore PostgreSQL dump files (optional)
+*.dump
+*.sql
