@@ -6,6 +6,7 @@ from rest_framework.views import APIView
 from rest_framework import status
 from django.contrib.auth.models import User
 from drf_spectacular.utils import extend_schema
+from rest_framework_simplejwt.authentication import JWTAuthentication
 
 from customer.serializers import LoginSerializer, UserSerializer
 
@@ -31,7 +32,7 @@ class LoginView(APIView):
 
 
 class UserInfoView(APIView):
-    authentication_classes = [SessionAuthentication, BasicAuthentication]  # Вимагає логін
+    authentication_classes = [SessionAuthentication, BasicAuthentication, JWTAuthentication]  # Вимагає логін
     permission_classes = [IsAuthenticated]  # Доступ тільки для авторизованих
 
     @extend_schema(
